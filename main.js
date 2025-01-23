@@ -18,9 +18,7 @@ async function openDay(dayNumber, dayElement) {
   }
 
   try {
-    const response = await fetch(
-      "https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious"
-    );
+    const response = await fetch("https://v2.jokeapi.dev/joke/Any");
     const data = await response.json();
     let joke = "";
 
